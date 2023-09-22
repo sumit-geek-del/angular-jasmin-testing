@@ -1,0 +1,20 @@
+<div class="container" style="width: 30%;">
+  <div class="row login_internal_div">
+      <h1>Login To Unified Portal</h1>
+
+
+      <mat-form-field appearance="outline" >
+        <mat-label>UserName</mat-label>
+        <input matInput placeholder="Enter User Name" [ngModel]="userName" (ngModelChange)="checkUserName($event)"/>
+      </mat-form-field>
+      <mat-error *ngIf="isUserName">UserName is Required *</mat-error>
+
+      <mat-form-field appearance="outline" >
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Enter Password" [ngModel]="userPassword" (ngModelChange)="checkUserPassword($event)"/>
+      </mat-form-field>
+      <mat-error *ngIf="isUserPassword">Password is Required *</mat-error>
+
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
+    </div>
+</div>

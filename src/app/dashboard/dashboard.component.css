@@ -1,0 +1,23 @@
+span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.application_div{
+    background: #e8ebef;
+    height: 30%;
+    padding: 30px;
+    width: 18%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.application_div:hover {
+    transform: translateY(30px);
+}
